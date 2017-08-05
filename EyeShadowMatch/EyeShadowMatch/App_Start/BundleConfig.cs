@@ -24,7 +24,9 @@ namespace EyeShadowMatch
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css"));
+                      "~/Content/bootstrap.css",
+                      "~/Content/scrolling-nav.css",
+                      "~/Content/Site.css"));
         }
     }
 }
