@@ -25,8 +25,9 @@
 }
 
 .navbar {
-    /*background-color: #ad5554;*/
     background-color: #fff;
+    /*background-color: #ad5554;
+    color:#fff;*/
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -57,6 +58,7 @@
     max-height: 100px;
     overflow-y: scroll;
     width: 100%;
+    border: 1px solid #e2dede;
 }
 
     .scrollable_drop_box ul{
@@ -66,10 +68,9 @@
         padding: 5px 0;
     }
 
-    .scrollable_drop_box ul li:hover {
-        color:#fff;
-        background-color:red;
-    }
+        .scrollable_drop_box ul li:hover {
+            background-color: #fafafa;
+        }
 
 .category {
     padding: 5px 0;
@@ -78,20 +79,23 @@
     width: 100%;
 }
 
-
-
-
-/* font Awesome http://fontawesome.io*/
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-/* Animation.css*/
-@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css);
-
 .col-item {
-    border: 1px solid #E1E1E1;
+    /*border: 1px solid #E1E1E1;*/
     background: #FFF;
     margin-bottom: 12px;
 }
 
+article.col-item:hover {
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*img#image:hover {
+    background-image: url('../Images/3605970692520_SWATCH1_GLOWINGLIGHT_COLORDESIGNEYESHADOW.jpg');
+}
+
+#image:hover {
+    background-image: url('../Images/3605970692520_SWATCH1_GLOWINGLIGHT_COLORDESIGNEYESHADOW.jpg');
+}*/
     .col-item .options {
         position: absolute;
         top: 6px;
@@ -101,6 +105,7 @@
     .col-item .photo {
         overflow: hidden;
     }
+
 
         .col-item .photo .options {
             display: none;
@@ -236,3 +241,5 @@
             .col-item .btn-details a:first-child {
                 margin-right: 12px;
             }
+
+
