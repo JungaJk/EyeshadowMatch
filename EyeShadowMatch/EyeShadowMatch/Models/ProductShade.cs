@@ -22,5 +22,7 @@ namespace EyeShadowMatch.Models
         public int ShadeId { get; set; }
 
         public Shade Shade { get; set; }
+
+        public byte[] ProductImage { get; set; }
     }
 }

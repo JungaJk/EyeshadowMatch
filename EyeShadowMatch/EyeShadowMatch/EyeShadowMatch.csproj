@@ -157,6 +157,7 @@
     <Compile Include="Models\Match.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductShade.cs" />
+    <Compile Include="Models\SeedData.cs" />
     <Compile Include="Models\Shade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
