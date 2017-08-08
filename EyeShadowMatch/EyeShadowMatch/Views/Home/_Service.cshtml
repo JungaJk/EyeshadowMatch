@@ -1,0 +1,70 @@
+﻿@model IEnumerable<EyeShadowMatch.Models.Brand>
+<section id="service" class="services-section">
+    <div class="container">
+        @*<div class="row">
+            <div class="col-md-12">
+                <h2>Enter your current product to find your match.</h2>
+            </div>
+        </div>*@
+        <div class="row">
+            <div class="col-md-3">
+                <div class="category">Product</div>
+                <div class="scrollable_drop_box">
+                    <ul>
+                        @foreach(var brand in Model)
+                        {
+                            <li class="pick-brand" id="@brand.BrandId">@brand.BrandName</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                Product
+            </div>
+            <div class="col-md-3">
+                Shade
+            </div>
+            <div class="col-md-3">
+                Look
+            </div>
+        </div>
+
+        <div class="row" style="margin-top:40px;">
+            @for (int i = 1; i < 5; i++)
+            {
+                <div class="col-sm-3">
+                    <article class="col-item">
+                        <div class="options">
+                            <button class="btn btn-default" type="submit" data-toggle="tooltip" data-placement="top" title="Buy">
+                                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                            </button>
+                            <button class="btn btn-default" type="submit" data-toggle="tooltip" data-placement="top" title="Add to wish list">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </button>
+                            <button class="btn btn-default" type="submit" data-toggle="tooltip" data-placement="top" title="Compare">
+                                <i class="fa fa-exchange"></i>
+                            </button>
+                        </div>
+                        <div class="photo">
+                            <img src="../Images/26044639_1989.jpg" class="img-responsive" id="image" alt="Product Image" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price-details col-md-6">
+                                    <p class="details">
+                                        Lorem ipsum dolor sit amet, consectetur..
+                                    </p>
+                                    <h1>Sample Product</h1>
+                                    <span class="price-new">&euro;30.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<script>
+
+</script>

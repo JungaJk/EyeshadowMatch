@@ -1,3 +1,4 @@
+@model IEnumerable<EyeShadowMatch.Models.Brand>
 ﻿   <!-- Intro Section -->
 <section id="intro" class="intro-section">
     <div class="container">
@@ -14,81 +15,65 @@
         </div>
     </div>
 </section>
-<section id="service" class="services-section">
-    <div class="container">
-        @*<div class="row">
-            <div class="col-md-12">
-                 <h3>Enter your current product to find your match.</h3>
-            </div>
-        </div>*@
-        <div class="row">
-            <div class="col-md-3">
-                <div class="category">Brand</div>
-                <div class="scrollable_drop_box">
-                   
-                    <ul>
-                        <li>MAC</li>
-                        <li>NARS</li>
-                        <li>Dior</li>
-                        <li>CHANEL</li>
-                        <li>Bobbi Brown</li>
-                    </ul>
-                </div>
-
-            </div>
-            <div class="col-md-3">
-                Product
-            </div>
-            <div class="col-md-3">
-                Shade
-            </div>
-            <div class="col-md-3">
-                Look
-            </div>
-        </div>
-        
-        <div class="row" style="margin-top:40px;">
-            @for (int i = 1; i < 5; i++)
-            {
-                <div class="col-sm-3">
-                    <article class="col-item">
-                        <div class="options">
-                            <button class="btn btn-default" type="submit" data-toggle="tooltip" data-placement="top" title="Buy">
-                                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-                            </button>
-                            <button class="btn btn-default" type="submit" data-toggle="tooltip" data-placement="top" title="Add to wish list">
-                                <i class="fa fa-heart" aria-hidden="true"></i>
-                            </button>
-                            <button class="btn btn-default" type="submit" data-toggle="tooltip" data-placement="top" title="Compare">
-                                <i class="fa fa-exchange"></i>
-                            </button>
-                        </div>
-                        <div class="photo">
-                            <img src="../Images/26044639_1989.jpg" class="img-responsive" id="image" alt="Product Image" />
-                        </div>
-                        <div class="info">
-                            <div class="row">
-                                <div class="price-details col-md-6">
-                                    <p class="details">
-                                        Lorem ipsum dolor sit amet, consectetur..
-                                    </p>
-                                    <h1>Sample Product</h1>
-                                    <span class="price-new">&euro;30.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            }
-        </div>
-    </div>
-</section>
+@Html.Partial("_Service",Model)
 <section id="about" class="about-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1>About Section</h1>
+                <h2 class="text-center stepheading">How it works - simple as 1,2,3</h2>
+                <hr class="break" />
+                <ul class="timeline">
+                    <li>
 
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="~/Images/Step/step1.png" alt="step1">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+
+                                <h4 class="subheading">Step One</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    Search the recipe by ingredient, name or dish category
+                                </p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="~/Images/Step/step2.png" alt="step2">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">Step Two</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    Choose the recipe and cook your delicious meal
+                                </p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="~/Images/Step/step3.jpg" alt="step3">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">Step Three</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    Enjoy your meal
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
             </div>
         </div>
     </div>
