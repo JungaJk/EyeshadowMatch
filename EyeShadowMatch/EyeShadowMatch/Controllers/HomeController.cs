@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EyeShadowMatch.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,19 +11,14 @@ namespace EyeShadowMatch.Controllers
     {
         public ActionResult Index()
         {
-            return View();
-        }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
+            using (var ctx = new EyeshadowMatchContext())
+            {
+                Brand brand = new Brand() { BrandName = "MAC" };
 
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
+                ctx.Brands.Add(brand);
+                ctx.SaveChanges();
+            }
 
             return View();
         }
